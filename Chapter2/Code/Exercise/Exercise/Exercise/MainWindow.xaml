@@ -1,0 +1,16 @@
+﻿<Window x:Class="Exercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="{Binding CountOf10000Yen}" ContentStringFormat="一万円札: {0}枚"/>
+        <Label Content="{Binding CountOf5000Yen}" ContentStringFormat="五千円札: {0}枚"/>
+        <Label Content="{Binding CountOf1000Yen}" ContentStringFormat="千円札: {0}枚"/>
+        <Button Content="合計"
+                Command="{Binding ShowSumCommand}"/>
+    </StackPanel>
+</Window>
